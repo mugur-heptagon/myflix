@@ -1,0 +1,46 @@
+@import "constants/colors.scss";
+
+.light {
+  .container {
+    background-color: $body-background-color-light;
+    color: $text-color-light;
+    .main {
+      background-color: $body-background-color-light;
+      header {
+        .search {
+          border-color: $text-color-light;
+          input[type="text"] {
+            color: $text-color-light;
+          }
+        }
+        .themeSwitch {
+          button {
+            border: 2px solid $listing-background-color-light;
+            &:first-child {
+              background-color: $listing-background-color-light;
+              color: $text-color-light;
+            }
+            &:last-child {
+              background-color: $listing-background-color-dark;
+              color: $text-color-dark;
+            }
+          }
+        }
+      }
+      .listingWrapper {
+        background-color: $listing-background-color-light;
+        border-color: $listing-background-color-light;
+        .pagination .pager img {
+          border-color: $text-color-dark;
+        }
+        .movieList {
+          border-color: $listing-background-color-light;
+          li {
+            border-color: $listing-background-color-light;
+            color: $body-background-color-light;
+          }
+        }
+      }
+    }
+  }
+}

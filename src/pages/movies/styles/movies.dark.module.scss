@@ -1,0 +1,45 @@
+@import "constants/colors.scss";
+
+.dark {
+  .container {
+    background-color: $body-background-color-dark;
+    color: $text-color-dark;
+    .main {
+      background-color: $body-background-color-dark;
+      header {
+        .search {
+          border-color: $text-color-dark;
+          input[type="text"] {
+            color: $text-color-dark;
+          }
+        }
+        .themeSwitch {
+          button {
+            border: 2px solid $listing-background-color-dark;
+            &:first-child {
+              background-color: $listing-background-color-dark;
+              color: $text-color-dark;
+            }
+            &:last-child {
+              background-color: $listing-background-color-light;
+              color: $text-color-light;
+            }
+          }
+        }
+      }
+      .listingWrapper {
+        background-color: $listing-background-color-dark;
+        border-color: $listing-background-color-dark;
+        .pagination .pager img {
+          border-color: $text-color-dark;
+        }
+        .movieList {
+          border-color: $listing-background-color-dark;
+          li {
+            border-color: $listing-background-color-dark;
+          }
+        }
+      }
+    }
+  }
+}

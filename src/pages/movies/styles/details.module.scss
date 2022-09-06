@@ -1,0 +1,84 @@
+@import "constants/colors.scss";
+
+.container {
+  line-height: 1.5em;
+  padding: 2rem;
+  background-color: $listing-background-color-dark;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  color: $text-color-dark;
+  overflow-y: scroll;
+  max-height: 80%;
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px $listing-background-color-dark;
+    background-color: $listing-background-color-dark;
+  }
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $listing-background-color-dark;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $body-background-color-dark;
+    border: 2px solid $listing-background-color-dark;
+  }
+  section {
+    padding: 0 1.2rem;
+    span {
+      color: $listing-background-color-light;
+    }
+  }
+  button {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 0.75rem;
+    outline: 0;
+    border: 0;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 80%;
+    font-size: 0.8em;
+    img {
+      max-width: 40%;
+      object-fit: contain;
+    }
+    section {
+      max-width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+    img {
+      max-width: 40%;
+    }
+    section {
+      max-width: 60%;
+    }
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .container {
+    max-width: 50%;
+    img {
+      max-width: 40%;
+    }
+    section {
+      max-width: 60%;
+    }
+  }
+}
